@@ -17,37 +17,41 @@
    - Software: NODE-RED Dashboard 2.0
 
 ### System-Übersicht
-┌─────────────────────────────────────┐
-│ Tablet (Dashboard GUI) │
-└─────────────┬───────────────────────┘
-│ HTTP/WebSocket
-┌─────────────▼───────────────────────┐
-│ NODE-RED (Logik & Orchestrierung) │
-│ ├─ Flows für Automation │
-│ └─ Python Backend Integration │
-└─────────────┬───────────────────────┘
-│ REST API
-┌─────────────▼───────────────────────┐
-│ Shelly Geräte (Aktoren) │
-│ ├─ Schaltaktor 1 │
-│ ├─ Schaltaktor 2 (später) │
-│ └─ Weitere Devices... │
-└─────────────────────────────────────┘
 
-### Workflow
-1. Benutzer interagiert mit Tablet-Dashboard
-2. NODE-RED empfängt Befehle
-3. Python-Logik evaluiert Anfrage
-4. HTTP-Request an Shelly
-5. Shelly schaltet Aktor
-6. Feedback zurück an Dashboard
-
-### Nächste Schritte
-- [x] GitHub Repository erstellen
-- [ ] Shelly IP-Adresse ermitteln
-- [ ] HTTP-Request Test durchführen
-- [ ] NODE-RED Dashboard 2.0 installieren
-- [ ] Erste GUI Prototype bauen
-
----
-*Stand: Work in Progress - Marc & Claude*
+```mermaid
+%%{init: {'theme': 'dark'}}%%
+graph TD
+    A[Tablet - NODE-RED Dashboard 2.0] 
+    B[NODE-RED - Logik & Automation]
+    C[Python Backend]
+    D[Shelly REST API]
+    E[Shelly Schaltaktor 1]
+    F[Shelly Schaltaktor 2 - später]
+    
+    A -->|HTTP/WebSocket| B
+    B --> C
+    C -->|HTTP-Request| D
+    D --> E
+    D --> F
+    
+    E -.->|Feedback| B
+    F -.->|Feedback| B
+      
+      
+      ### Workflow
+      1. Benutzer interagiert mit Tablet-Dashboard
+      2. NODE-RED empfängt Befehle
+      3. Python-Logik evaluiert Anfrage
+      4. HTTP-Request an Shelly
+      5. Shelly schaltet Aktor
+      6. Feedback zurück an Dashboard
+      
+      ### Nächste Schritte
+      - [x] GitHub Repository erstellen
+      - [ ] Shelly IP-Adresse ermitteln
+      - [ ] HTTP-Request Test durchführen
+      - [ ] NODE-RED Dashboard 2.0 installieren
+      - [ ] Erste GUI Prototype bauen
+      
+      ---
+      *Stand: Work in Progress - Marc & Claude*
