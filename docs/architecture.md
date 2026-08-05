@@ -18,9 +18,7 @@
 
 ### System-Übersicht
 
-### System-Übersicht
-
-![S.A.R.A.H. Architecture](/system-architecture.png)
+![S.A.R.A.H. Systemarchitektur](system-architecture.png)
       
       ### Nächste Schritte
       - [x] GitHub Repository erstellen
