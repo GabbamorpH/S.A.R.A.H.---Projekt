@@ -18,33 +18,9 @@
 
 ### System-Übersicht
 
-```mermaid
-%%{init: {'theme': 'dark'}}%%
-graph TD
-    A[Tablet - NODE-RED Dashboard 2.0] 
-    B[NODE-RED - Logik & Automation]
-    C[Python Backend]
-    D[Shelly REST API]
-    E[Shelly Schaltaktor 1]
-    F[Shelly Schaltaktor 2 - später]
-    
-    A -->|HTTP/WebSocket| B
-    B --> C
-    C -->|HTTP-Request| D
-    D --> E
-    D --> F
-    
-    E -.->|Feedback| B
-    F -.->|Feedback| B
-      
-      
-      ### Workflow
-      1. Benutzer interagiert mit Tablet-Dashboard
-      2. NODE-RED empfängt Befehle
-      3. Python-Logik evaluiert Anfrage
-      4. HTTP-Request an Shelly
-      5. Shelly schaltet Aktor
-      6. Feedback zurück an Dashboard
+### System-Übersicht
+
+![S.A.R.A.H. Architecture](/system-architecture.png)
       
       ### Nächste Schritte
       - [x] GitHub Repository erstellen
