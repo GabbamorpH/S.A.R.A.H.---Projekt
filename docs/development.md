@@ -17,55 +17,38 @@ Dieser Guide zeigt:
 ---
 
 ## 📦 Projekt-Struktur verstehen
+S.A.R.A.H. Projekt-Struktur
+
 s-a-r-a-h/
-│
-├── node-red/
-│ ├── flows.json # Haupt-Flows (exportiert)
-│ ├── flows_cred.json # Credentials (NICHT committen!)
-│ └── README.md # NODE-RED Setup
-│
-├── python/
-│ ├── src/
-│ │ ├── init.py
-│ │ ├── main.py # Einstiegspunkt
-│ │ ├── shelly_api.py # Shelly-Kommunikation
-│ │ ├── automation/ # Automatisierungs-Engine
-│ │ │ ├── init.py
-│ │ │ └── rules.py
-│ │ └── utils/ # Helper-Funktionen
-│ │ └── logger.py
-│ ├── tests/
-│ │ ├── init.py
-│ │ ├── test_shelly_api.py
-│ │ └── test_automation.py
-│ ├── venv/ # Virtual Environment (lokal!)
-│ ├── requirements.txt # Dependencies
-│ ├── setup.py # Installation
-│ └── README.md # Python Backend
-│
-├── hardware/
-│ ├── components.md # Komponentenliste
-│ ├── wiring.md # Verkabelung
-│ └── README.md
-│
-├── docs/
-│ ├── architecture.md # System-Architektur
-│ ├── setup.md # Installation Guide
-│ ├── development.md # Du bist hier!
-│ ├── roadmap.md # Zeitplan
-│ ├── diagrams/
-│ │ └── system-architecture.png
-│ └── README.md
-│
-├── scripts/
-│ ├── install.sh # Installation Script
-│ ├── setup-ubuntu.sh
-│ └── README.md
-│
-├── .gitignore # Git ignoriert bestimmte Dateien
-├── README.md # Projekt-Übersicht
-├── LICENSE # MIT License
-└── CHANGELOG.md # Versions-Geschichte
+  
+  node-red/
+    flows.json
+    flows_cred.json
+    README.md
+  
+  python/
+    src/
+      main.py
+      shelly_api.py
+      automation/
+      utils/
+    tests/
+      test_shelly_api.py
+      test_automation.py
+    requirements.txt
+    venv/
+  
+  docs/
+    architecture.md
+    setup.md
+    roadmap.md
+  
+  hardware/
+  scripts/
+  
+  README.md
+  .gitignore
+  LICENSE
 
 
 ---
