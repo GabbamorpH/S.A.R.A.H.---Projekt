@@ -19,27 +19,53 @@ Dieser Guide zeigt:
 ## 📦 Projekt-Struktur verstehen
 s-a-r-a-h/
 │
-├── node-red/ # Flow-basierte Automation
+├── node-red/
 │ ├── flows.json # Haupt-Flows (exportiert)
-│ └── flows_cred.json # Credentials (NICHT committen!)
+│ ├── flows_cred.json # Credentials (NICHT committen!)
+│ └── README.md # NODE-RED Setup
 │
-├── python/ # Backend-Logik
+├── python/
 │ ├── src/
+│ │ ├── init.py
 │ │ ├── main.py # Einstiegspunkt
-│ │ ├── shelly_api.py # Shelly-Integration
+│ │ ├── shelly_api.py # Shelly-Kommunikation
 │ │ ├── automation/ # Automatisierungs-Engine
+│ │ │ ├── init.py
+│ │ │ └── rules.py
 │ │ └── utils/ # Helper-Funktionen
-│ ├── tests/ # Unit-Tests
+│ │ └── logger.py
+│ ├── tests/
+│ │ ├── init.py
+│ │ ├── test_shelly_api.py
+│ │ └── test_automation.py
+│ ├── venv/ # Virtual Environment (lokal!)
 │ ├── requirements.txt # Dependencies
-│ └── venv/ # Virtual Environment (lokal)
+│ ├── setup.py # Installation
+│ └── README.md # Python Backend
 │
-├── docs/ # Dokumentation
-│ ├── architecture.md
-│ ├── setup.md
+├── hardware/
+│ ├── components.md # Komponentenliste
+│ ├── wiring.md # Verkabelung
+│ └── README.md
+│
+├── docs/
+│ ├── architecture.md # System-Architektur
+│ ├── setup.md # Installation Guide
 │ ├── development.md # Du bist hier!
-│ └── roadmap.md
+│ ├── roadmap.md # Zeitplan
+│ ├── diagrams/
+│ │ └── system-architecture.png
+│ └── README.md
 │
-└── .gitignore # Git ignoriert bestimmte Dateien
+├── scripts/
+│ ├── install.sh # Installation Script
+│ ├── setup-ubuntu.sh
+│ └── README.md
+│
+├── .gitignore # Git ignoriert bestimmte Dateien
+├── README.md # Projekt-Übersicht
+├── LICENSE # MIT License
+└── CHANGELOG.md # Versions-Geschichte
 
 
 ---
