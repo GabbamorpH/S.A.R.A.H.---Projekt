@@ -113,9 +113,9 @@ Grundsystem mit NODE-RED Dashboard + Shelly-Gerätesteuerung
 ### Q4 2026 - Q1 2027
 **Schulung & Vorbereitung**
 
-- [ ] **Marc:** IT-Admin Schulung (22.10.25 - 18.12.25) ⚠️ WICHTIG
+- [ ] **Marc:** IT-Admin Schulung (22.10.26 - 18.12.26) ⚠️ WICHTIG
 - [ ] Phase 1 Final Polish
-- [ ] **Freund's Haus:** Hardware-Installation vorbereiten
+- [ ]  Hardware-Installation vorbereiten
 - [ ] Final Code Review & Documentation
 
 **Deliverable:** Phase 1 Ready for Production ✅
