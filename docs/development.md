@@ -19,36 +19,39 @@ Dieser Guide zeigt:
 ## 📦 Projekt-Struktur verstehen
 S.A.R.A.H. Projekt-Struktur
 
-s-a-r-a-h/
-  
-  node-red/
-    flows.json
-    flows_cred.json
-    README.md
-  
-  python/
-    src/
-      main.py
-      shelly_api.py
-      automation/
-      utils/
-    tests/
-      test_shelly_api.py
-      test_automation.py
-    requirements.txt
-    venv/
-  
-  docs/
-    architecture.md
-    setup.md
-    roadmap.md
-  
-  hardware/
-  scripts/
-  
-  README.md
-  .gitignore
-  LICENSE
+## 📦 Projekt-Struktur
+
+**Hauptordner:**
+
+- **node-red/** - NODE-RED Flows & Dashboard
+- **python/** - Python Backend & Logik
+- **docs/** - Dokumentation
+- **hardware/** - Hardware-Spezifikationen
+- **scripts/** - Setup & Installation Scripts
+
+**In python/:**
+
+- src/ - Source Code
+  - main.py - Einstiegspunkt
+  - shelly_api.py - Shelly-Integration
+  - automation/ - Automatisierungs-Logik
+  - utils/ - Helper-Funktionen
+- tests/ - Unit Tests
+- venv/ - Virtual Environment
+- requirements.txt - Dependencies
+
+**In docs/:**
+
+- architecture.md
+- setup.md
+- roadmap.md
+- diagrams/ - Diagramme & Images
+
+**Root:**
+
+- README.md
+- .gitignore
+- LICENSE
 
 
 ---
